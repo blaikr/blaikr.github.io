@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 23rd Anniversary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="falling-sheep sheep1"></div>
+    <div class="falling-sheep sheep2"></div>
+    <div class="falling-sheep sheep3"></div>
+    <div class="falling-sheep sheep4"></div>
+    <div class="falling-sheep sheep5"></div>
+    <div class="falling-sheep sheep6"></div>
+
+    <!-- Music (Click the monkey to play) -->
+    <audio id="anniversary-audio" loop>
+        <source src="chipichapa.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Clickable monkey for music -->
+    <div class="monkey">
+        <img src="monkey.png" alt="Click me!" id="sheep-click" onclick="playMusic()">
+        <p>Click the monkey for a surprise!</p>
+    </div>
+
+    <!-- Dancing Picture -->
+    <div id="dancing-picture">
+        <img src="nichijou.png" alt="Dancing Picture">
+    </div>
+
+
+    <div class="container">
+        <header>
+            <h1>Happy 23rd Month Anniversary, My Ai!</h1>
+        </header>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="photo-frame">
+                <img src="image7.png" alt="Memorable moment 1">
+                <div class="heart"></div>
+            </div>
+            <div class="photo-frame">
+                <img src="image10.png" alt="Memorable moment 6">
+                <div class="heart"></div>
+            </div>
+        </section>
+
+        <footer>
+            <p>23 months of love and forever to go! ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("anniversary-audio");
+            audio.play();
+            var dancingPicture = document.getElementById("dancing-picture");
+            dancingPicture.style.display = "block"; // Make the image visible
+        }
+    </script>
+</body>
+</html>
